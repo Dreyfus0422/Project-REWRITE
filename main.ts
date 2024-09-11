@@ -3,19 +3,16 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.AB, function () {
     basic.showLeds(`
+        . # # # #
+        # . # # #
         # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
-        # # # # #
+        # # # . #
+        # # # # .
         `)
     music.play(music.stringPlayable("C5 B A G C5 B A G ", 120), music.PlaybackMode.UntilDone)
 })
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Butterfly)
-})
-radio.onReceivedValue(function (name, value) {
-    radio.sendValue("Talkback", 2)
 })
 basic.showIcon(IconNames.Scissors)
 datalogger.log(
