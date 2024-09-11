@@ -14,6 +14,9 @@ input.onButtonPressed(Button.AB, function () {
 input.onButtonPressed(Button.B, function () {
     basic.showIcon(IconNames.Butterfly)
 })
+radio.onReceivedValue(function (name, value) {
+    radio.sendValue("Talkback", 2)
+})
 basic.showIcon(IconNames.Scissors)
 datalogger.log(
 datalogger.createCV("A", 1),
@@ -21,5 +24,5 @@ datalogger.createCV("B", 2),
 datalogger.createCV("C", 3)
 )
 basic.forever(function () {
-	
+    radio.sendValue("Radiotest", 1)
 })
