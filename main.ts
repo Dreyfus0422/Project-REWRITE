@@ -1,5 +1,6 @@
 datalogger.onLogFull(function () {
     basic.showString("Log Is Full. Press any button . . .")
+    datalogger.deleteLog(datalogger.DeleteType.Full)
 })
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Heart)
@@ -21,6 +22,5 @@ basic.showIcon(IconNames.Scissors)
 datalogger.log(
 datalogger.createCV("A", 1),
 datalogger.createCV("B", 2),
-datalogger.createCV("C", 3),
-datalogger.createCV("D", 4)
+datalogger.createCV("C", 3)
 )
