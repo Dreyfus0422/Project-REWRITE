@@ -1,3 +1,6 @@
+datalogger.onLogFull(function () {
+    basic.showString("Log Is Full. Press any button . . .")
+})
 input.onButtonPressed(Button.A, function () {
     basic.showIcon(IconNames.Heart)
 })
