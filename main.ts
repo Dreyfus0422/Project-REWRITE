@@ -24,6 +24,3 @@ datalogger.createCV("B", 2),
 datalogger.createCV("C", 3),
 datalogger.createCV("D", 4)
 )
-basic.forever(function () {
-    radio.sendValue("Radiotest", 1)
-})
